@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+    <h1>Juego de 21 (Blackjack)</h1>
+
+  <h2>Jugador</h2>
+  <div id="cartas-jugador" class="cards"></div>
+  <p id="puntos-jugador">Puntos: 0</p>
+
+  <h2>Dealer</h2>
+  <div id="cartas-dealer" class="cards"></div>
+  <p id="puntos-dealer">Puntos: 0</p>
+
+  <div class="btns">
+    <button onclick="pedirCarta()">Pedir</button>
+    <button onclick="plantarse()">Plantarse</button>
+    <button onclick="reiniciar()">Reiniciar</button>
+  </div>
+
+   <div id="mensaje"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
